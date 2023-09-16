@@ -1,0 +1,4 @@
+../Core/Src/internal_rtc.c:22:6:set_time	40	static
+../Core/Src/internal_rtc.c:72:6:get_time	64	static
+../Core/Src/internal_rtc.c:112:6:set_alarm	56	static
+../Core/Src/internal_rtc.c:153:6:HAL_RTC_AlarmAEventCallback	16	static
