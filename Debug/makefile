@@ -60,8 +60,8 @@ all: main-build
 main-build: rtc-nucleo-g431kb-project.elf secondary-outputs
 
 # Tool invocations
-rtc-nucleo-g431kb-project.elf rtc-nucleo-g431kb-project.map: $(OBJS) $(USER_OBJS) C:\Users\sss\Documents\Fiverr\STM32\rtc-nucleo-g431kb-project\STM32G431KBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "rtc-nucleo-g431kb-project.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\sss\Documents\Fiverr\STM32\rtc-nucleo-g431kb-project\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="rtc-nucleo-g431kb-project.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+rtc-nucleo-g431kb-project.elf rtc-nucleo-g431kb-project.map: $(OBJS) $(USER_OBJS) C:\Users\mzeml\embedded\rtc-nucleo-g431kb-project\STM32G431KBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "rtc-nucleo-g431kb-project.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\mzeml\embedded\rtc-nucleo-g431kb-project\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="rtc-nucleo-g431kb-project.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
